@@ -1,0 +1,416 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2020, 1:23:00 PM
+    Author     : saraj
+*/
+
+/***  general style ***/
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 500;
+}
+
+p {
+    color: #5B6C94;
+    line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #32325C;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button-green {
+    border: 2px solid #1FDB84;
+    border-radius: 6px;
+    background-color: #1FDB84;
+    box-shadow: 0 -8px 34px 0 rgba(31,219,132,0.6);
+    display: inline-block;
+    padding: 10px 30px;
+
+}
+
+.image-placeholder {
+    display: block;
+    position: relative;
+    background: url('assets/loader-img.gif') no-repeat center center;
+    background-size: 10rem auto;
+}
+
+.image-placeholder:before {
+    display: block;
+    content: '';
+    padding-top: 130%;
+}
+
+.size-5x4:before {
+    padding-top: 79%;
+}
+
+.image-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+
+/*** HEADER ***/
+
+header .navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header .navbar-light .navbar-toggler span {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    display: block;
+}
+
+header .navbar-light .navbar-toggler span:last-of-type {
+    margin-bottom: 0;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    line-height: 24px;
+    text-align: center;
+}
+
+header .navbar-light .navbar-nav .nav-link.active,
+header .navbar-light .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid #1FDB84;
+    color: #fff;
+}
+
+header .navbar-light .nav-login {
+    color: #1FDB84 !important;
+}
+
+header .navbar-light .nav-login:hover {
+    border-bottom: 2px solid transparent !important;
+}
+
+header .navbar-light .nav-register {
+    border: 2px solid #1FDB84;
+    border-radius: 6px;
+    background-color: #1FDB84;
+    box-shadow: 0 8px 34px 0 rgba(31,219,132,0.6);
+}
+
+
+/*** HERO ***/
+
+.hero-section article {
+    padding: 80px 0 0;
+}
+
+.hero-section .hero-title {
+    font-size: 30px;
+    line-height: 40px;  
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.hero-section .hero-text {
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.hero-section .hero-button {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;  
+    text-align: center;
+}
+
+
+/*** BENEFIT ***/
+
+.benefit-section .container {
+    padding: 100px 20px 0px;
+}
+
+.benefit-section .benefit-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #031D5B;
+    margin-bottom: 28px;
+}
+
+.benefit-section .benefit-title:after {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #1FDB84;
+    width: 60px;
+    max-width: 100%;   
+    margin: 28px auto 0;
+}
+
+.benefit-section .benefit-text {
+    height: 96px;
+    overflow: hidden;
+}
+
+
+/*** PRICING ***/
+
+.pricing-section {
+    background: linear-gradient(180deg, transparent 0%, #F8F9FC 100%);
+    padding: 100px 0;
+}
+
+.pricing-section .pricing-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #32325C;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.pricing-section .pricing-wrapper {
+    padding: 36px 0 47px;
+    border-top: 3px solid transparent;
+    transition: all 200ms linear;
+}
+
+.pricing-section .pricing-wrapper:hover {
+    background-color: #fff;
+    box-shadow: 0 7px 24px 0 rgba(83,83,83,0.1);
+    border-top: 3px solid #0A8AFF;
+}
+
+.pricing-section .pricing-subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.27px;
+    color: #32325C;
+    margin-bottom: 30px;
+}
+
+.pricing-section .pricing-price {
+    font-weight: 400; 
+    font-size: 60px;
+    line-height: 44px;
+    color: #1FDB84;
+    margin-bottom: 13px;
+}
+
+.pricing-section .pricing-text {
+    letter-spacing: 0.18;
+    color: #5B6C94;
+    margin-bottom: 30px;
+}
+
+.pricing-section .pricing-margin {
+    margin-bottom: 40px;
+}
+
+.pricing-section .pricing-text p {
+    margin-bottom: 5px;
+}
+
+.pricing-section .pricing-text:last-of-type p {
+    margin-bottom: 0px;
+}
+
+.pricing-section .pricing-button {
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 60%;
+    padding: 15px 0;
+    margin: auto auto 0;
+}
+
+
+/*** TESTIMONIALS ***/
+
+.testimonials-section {
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, #F8F9FC 0%, #DADADA 100%);
+}
+
+.testimonials-section .testimonials-background {
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.testimonials-section .testimonials-background h2 {
+    color: #031D5B;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    padding: 70px 24px 104px 14px;
+}
+
+.testimonials-section .testimonials-content {
+    padding: 80px 60px 60px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 12px 12px 40px 0 rgba(121,121,121,0.3);
+    transition: all 200ms linear;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+.testimonials-section .testimonials-content:hover {
+    background-color: #1FDB84;
+    box-shadow: 12px 12px 40px 0 rgba(31,219,132,0.5);
+}
+
+.testimonials-content:hover .testimonials-text,
+.testimonials-content:hover .testimonials-name,
+.testimonials-content:hover .testimonials-icon span {
+    color: #fff;
+}
+
+.testimonials-content:hover .testimonials-name span {
+    opacity: 80%;
+}
+
+.testimonials-section .testimonials-icon {
+    width: 63px;
+    height: 40px;
+    color: #1FDB84;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.testimonials-section .testimonials-icon span {
+    font-size: 40px;
+    display: inline-block;
+}
+
+.testimonials-section .testimonials-text {
+    font-size: 18px;
+    line-height: 36px;
+    color: #5B6C94;
+    margin-bottom: 78px;
+}
+
+.testimonials-section .testimonials-name {
+    color: #031D5B;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.testimonials-section .testimonials-name span {
+    opacity: 40%;
+}
+
+
+/*** GALLERY ***/
+
+.gallery-section {
+    background: linear-gradient(180deg,#DADADA 0%, #F8F9FC 100%);
+}
+
+.gallery-section .gallery-wrapper {
+    position: relative; 
+    margin-bottom: 0;
+}
+
+.gallery-section .gallery-wrapper img {
+    width: 100%;
+}
+
+.gallery-section .gallery-wrapper .gallery-hover {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none !important;
+    background-color: rgba(31, 219, 132, 0.7);
+}
+
+.gallery-section .gallery-hover .gallery-icon {
+    width: 61px;
+    height: 61px;
+    border:3px solid #fff;
+    line-height: 56px;
+    text-align: center;
+    color:#fff;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.gallery-section .gallery-content:hover .gallery-hover {
+    display: flex !important;
+}
+
+
+/*** PLATFORM ***/
+
+
+.platform-section {
+    padding: 100px 0;
+}
+
+.platform-section .platform-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #031D5B;
+    margin-bottom: 53px;
+}
+
+.platform-section .platform-item img {
+    display: inline-block;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/*** LOCATION ***/
+
+.location-section .breadcrumb {
+    padding: 0 0 60px;
+}
+
+.location-section .breadcrumb-item a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #5B6C94;
+}

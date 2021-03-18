@@ -1,0 +1,160 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 9, 2020, 1:23:26 PM
+    Author     : saraj
+*/
+
+@media (min-width: 576px) {
+
+    /*** BENEFIT ***/
+
+    .benefit-section .benefit-title:after {
+        margin: 28px 0 0;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /*** HERO ***/
+
+    .hero-section .container {
+        padding-bottom: 20px;
+    }
+
+    .hero-section .hero-title {
+        font-size: 35px;
+        line-height: 45px;  
+    }
+
+    .hero-section .hero-image {
+        padding-top: 100px;
+    }
+
+    .hero-section .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: -100px;
+        padding-bottom: 100px;
+    }
+
+    /*** BENEFIT ***/
+
+    .benefit-section .container {
+        padding: 60px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 10px 34px 0 rgba(210,210,210,0.5); 
+        margin-top: -60px;
+    }
+
+    /*** PRICING ***/
+
+    .pricing-section .pricing-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .pricing-section .pricing-wrapper {
+        padding: 56px 0px;
+    }
+
+    .pricing-section .pricing-subtitle {
+        margin-bottom: 31px;
+    }
+
+    .pricing-section .pricing-price {
+        font-size: 72px;
+        line-height: 64px;
+    }
+
+    .pricing-section .pricing-margin {
+        margin-bottom: 60px;
+    }
+
+    .pricing-section .pricing-text {
+        letter-spacing: 0.18;
+        color: #5B6C94;
+        margin-bottom: 60px;
+    }
+
+    .pricing-section .pricing-text p {
+        margin-bottom: 15px !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    /*** HERO ***/
+
+    .hero-section .container {
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 57px; 
+    }
+
+    .hero-text {
+        margin-bottom: 45px;
+    }
+
+    /*** BENEFIT ***/
+
+    .benefit-section .container {
+        padding: 60px 60px 80px;
+        margin-top: -100px;
+    }
+    
+    /*** PLATFORM ***/
+    
+    .platform-section {
+    padding: 140px 0;
+}
+
+
+    @media (min-width: 1200px) {
+
+        /*** HERO ***/
+
+        .hero-section .hero-image {
+            padding-top: 110px;
+        }
+
+        /*** BENEFIT ***/
+
+        .hero-section .hero-title {
+            font-size: 48px;
+        }
+
+        /*** PRICING ***/
+
+        .pricing-section .pricing-title {
+            font-size: 40px;
+            line-height: 59px;
+        }
+
+        /*** TESTIMONIALS ***/
+
+        .testimonials-section .testimonials-text {
+            height: 144px;
+            overflow: hidden;
+        }
+
+    }
+
+    @media (min-width: 1400px) {
+
+        /*** HERO ***/
+
+        .hero-section .hero-image {
+            padding-top: 130px;
+        }
+
+    }
+
+
